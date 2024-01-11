@@ -1,0 +1,54 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Learning Sets",
+  "type": "object",
+  "properties": {
+    "content" : {
+      "type" : "string"
+    },
+    "training_set": {
+      "$ref": "#/definitions/learning_set"
+    },
+    "validation_set": {
+      "$ref": "#/definitions/learning_set"
+    },
+    "test_set": {
+      "$ref": "#/definitions/learning_set"
+    }
+  },
+  "definitions": {
+    "learning_set": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Prepared Session",
+        "properties": {
+          "maximum_powerconsumptiontimeseries" : {
+            "type": "number"
+          },
+          "median_powerconsumptiontimeseries" : {
+            "type": "number"
+          },
+          "skeweness_powerconsumptiontimeseries" : {
+            "type": "number"
+          },
+          "meanabsolutedeviation_powerconsumptiontimeseries" : {
+            "type": "number"
+          },
+          "tissue_product" : {
+            "type": "number"
+          },
+          "load_and_speed_type" : {
+            "type": "number"
+          },
+          "label" : {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}

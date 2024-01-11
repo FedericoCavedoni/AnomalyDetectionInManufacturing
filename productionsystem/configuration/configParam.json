@@ -1,0 +1,5 @@
+{
+  "label_to_both_systems": 10,
+  "label_only_to_client": 20,
+  "service_flag": false
+}

@@ -1,0 +1,42 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Configuration",
+  "type": "object",
+  "required": [
+    "sessionThreshold",
+    "toleranceInterval",
+    "sessionNumber",
+    "training_set_size",
+    "validation_set_size",
+    "testing_set_size",
+    "SERVICE_FLAG"
+  ],
+  "properties": {
+    "sessionThreshold": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "toleranceInterval": {
+      "type": "integer"
+    },
+    "sessionNumber": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "training_set_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "validation_set_size": {
+      "type": "integer"
+    },
+    "testing_set_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "SERVICE_FLAG": {
+      "type": "boolean"
+    }
+  }
+}

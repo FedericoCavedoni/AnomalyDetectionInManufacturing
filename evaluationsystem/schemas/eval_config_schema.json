@@ -1,0 +1,29 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConfigurationParameters",
+  "type": "object",
+  "required": [
+    "MAX_ERRORS",
+    "MAX_CONSECUTIVE_ERRORS",
+    "MIN_LABELS",
+    "SERVICE_FLAG"
+  ],
+  "properties": {
+    "MAX_ERRORS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MAX_CONSECUTIVE_ERRORS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MIN_LABELS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "SERVICE_FLAG": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Configuration",
+  "type": "object",
+  "required": [
+    "DEVELOPMENT_PHASE",
+    "DEVELOPMENT_SESSIONS",
+    "PRODUCTION_SESSIONS",
+    "EVALUATION_SESSIONS"
+  ],
+  "properties": {
+    "DEVELOPMENT_PHASE": {
+      "type": "boolean"
+    },
+    "DEVELOPMENT_SESSIONS": {
+      "type": "integer"
+    },
+    "PRODUCTION_SESSIONS": {
+      "type": "integer"
+    },
+    "EVALUATION_SESSIONS": {
+      "type": "integer"
+    }
+  }
+}
+
+

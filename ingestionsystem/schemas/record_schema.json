@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "const": "record"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "record_type": {
+      "type": "string",
+      "enum": ["power", "production", "machine", "label"]
+    },
+    "vars": {
+      "type": "string"
+    }
+  },
+  "required": ["content", "uuid", "record_type", "vars"]
+}

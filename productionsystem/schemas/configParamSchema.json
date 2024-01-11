@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "label_to_both_systems": {
+      "type": "number"
+    },
+    "label_only_to_client": {
+      "type": "number"
+    },
+    "service_flag": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "label_to_both_systems",
+    "label_only_to_client",
+    "service_flag"
+  ],
+  "additionalProperties": false
+}

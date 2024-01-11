@@ -1,0 +1,22 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Timestamp",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "system",
+    "phase"
+  ],
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "system": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    }
+  }
+}

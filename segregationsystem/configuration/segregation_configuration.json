@@ -1,0 +1,9 @@
+{
+  "sessionThreshold": 2,
+  "toleranceInterval": 2,
+  "sessionNumber": 10,
+  "training_set_size": 0.7,
+  "validation_set_size": 0.2,
+  "testing_set_size": 0.1,
+  "service_flag": false
+}

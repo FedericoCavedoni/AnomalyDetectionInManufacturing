@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "development_phase": {
+      "type": "boolean"
+    },
+    "evaluation_phase_number_of_sessions": {
+      "type": "integer"
+    },
+    "evaluation_phase_total_number_of_sessions": {
+      "type": "integer"
+    },
+    "minimum_records": {
+      "type": "integer"
+    },
+    "missing_samples_threshold": {
+      "type": "integer"
+    },
+    "service_flag": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "development_phase",
+    "evaluation_phase_number_of_sessions",
+    "evaluation_phase_total_number_of_sessions",
+    "minimum_records",
+    "missing_samples_threshold",
+    "service_flag"
+  ]
+}

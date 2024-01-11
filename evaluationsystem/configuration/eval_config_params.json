@@ -1,0 +1,6 @@
+{
+    "MAX_ERRORS" : 7,
+    "MAX_CONSECUTIVE_ERRORS" : 5,
+    "MIN_LABELS" : 10,
+    "SERVICE_FLAG" : false
+}

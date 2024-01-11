@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "development_phase": {
+      "type": "boolean"
+    },
+    "max_value": {
+      "type": "number"
+    },
+    "min_value": {
+      "type": "number"
+    },
+    "service_flag": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "development_phase",
+    "max_value",
+    "min_value",
+    "service_flag"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Configuration",
+  "type": "object",
+  "required": [
+    "MIN_LAYERS",
+    "MAX_LAYERS",
+    "STEP_LAYERS",
+    "MIN_NEURONS",
+    "MAX_NEURONS",
+    "STEP_NEURONS",
+    "OVERFITTING_TOLERANCE",
+    "TEST_ERROR_TOLERANCE",
+    "SERVICE_FLAG"
+  ],
+  "properties": {
+    "MIN_lAYERS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MAX_lAYERS": {
+      "type": "integer"
+    },
+    "STEP_lAYERS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MIN_NEURONS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "MAX_NEURONS": {
+      "type": "integer"
+    },
+    "STEP_NEURONS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "OVERFITTING_TOLERANCE": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "TEST_ERROR_TOLERANCE": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "SERVICE_FLAG": {
+      "type": "boolean"
+    }
+  }
+}
+
+
